@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>York U</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formStyle.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper2">
+            <div class="row">
+                <ul class="headerText-links">
+                    <li class="headerText">Future Students</li>
+                    <li class="headerText">Current Students</li>
+                    <li class="headerText">Alumni</li>
+                    <li class="headerText">Donors</li>
+                    <li class="headerText">Recruiters</li>
+                    <li class="headerText">Media</li>
+                </ul>
+                <div class="headerNavBtns">
+                    <button class="btnStyle2">Search</button>
+                    <button class="btnStyle3">My Schulich</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="headerNavBtns">
+                    <div class="mainLogo">
+                        <svg id="icon-schulich" viewBox="0 0 151.8 47.6">
+                            <title>Schulich logo</title>
+                            <desc>The word Schulich</desc>
+    
+                            <path class="st0" d="M1.7,21.3c1.7,0.9,3.2,1.7,6,1.7c2.1,0,4.1-0.4,4.1-2.4C11.7,15.8,0,18.8,0,9.6c0-6,5.8-7.7,10.8-7.7
+                            c2.4,0,4.7,0.4,6.4,0.9l-1.3,5.2c-1.7-0.8-2.8-1.1-4.7-1.1c-1.7,0-4.5,0.1-4.5,2.3c0,4.1,11.7,1.3,11.7,10.4c0,6.5-5.4,8.3-10.9,8.3
+                            c-2.3,0-5.2-0.4-7.4-1.1L1.7,21.3z"></path>
+                            <path class="st0" d="M41.1,0.5h6.4v11h0.1C49,9.6,51,8.3,53.8,8.3c5.1,0,7.1,3.6,7.1,7.5v11.7h-6.4v-9.1c0-3.5-1.2-4.7-3-4.7
+                            c-2.6,0-4,1.8-4,5.9v7.9h-6.4L41.1,0.5L41.1,0.5z"></path>
+                            <path class="st0" d="M85.1,27.5h-5.8V24h-0.1c-1.3,2.7-3.8,3.9-6.8,3.9c-5.1,0-7.1-3.6-7.1-7.5V8.7h6.4v9.1c0,3.5,1.2,4.7,3,4.7
+                            c2.6,0,4-1.8,4-5.9V8.7h6.4V27.5z"></path>
+                            <rect x="90.2" y="0.5" class="st0" width="6.4" height="27"></rect>
+                            <rect x="102" y="8.7" class="st0" width="6.4" height="18.7"></rect>
+                            <path class="st0"
+                                d="M127,14c-1.2-0.7-1.8-0.9-3.3-0.9c-2.8,0-4.9,1.9-4.9,5.2c0,3,2.5,4.9,5.3,4.9c1.5,0,2.1-0.3,3.2-0.8l1.1,4.6
+                            c-1.6,0.5-3.7,0.9-5.4,0.9c-6.1,0-10.8-3.6-10.8-9.8c0-6.2,4.7-9.8,10.8-9.8c1.9,0,3.7,0.3,5.2,1L127,14z">
+                            </path>
+                            <path class="st0" d="M132,0.5h6.4v11h0.1c1.4-1.9,3.4-3.2,6.2-3.2c5.1,0,7.1,3.6,7.1,7.5v11.7h-6.4v-9.1c0-3.5-1.2-4.7-2.9-4.7
+                            c-2.6,0-4,1.8-4,5.9v7.9H132V0.5z"></path>
+                            <path class="st0"
+                                d="M105.1,7c1.9,0,3.5-1.6,3.5-3.5c0-1.9-1.5-3.5-3.5-3.5c-1.9,0-3.5,1.6-3.5,3.5C101.7,5.4,103.2,7,105.1,7">
+                            </path>
+                            <path class="st0"
+                                d="M36.1,14.1c-1.2-0.7-1.8-0.9-3.3-0.9c-2.8,0-4.9,1.9-4.9,5.2c0,3,2.5,4.9,5.3,4.9c1.5,0,2.1-0.3,3.2-0.8
+                            l1.1,4.6C35.8,27.6,33.7,28,32,28c-6.1,0-10.8-3.6-10.8-9.8c0-6.2,4.7-9.8,10.8-9.8c1.9,0,3.7,0.3,5.2,1L36.1,14.1z">
+                            </path>
+                            <path class="st0" d="M6.5,36.4c-0.9-0.4-1.4-0.5-2.4-0.5c-1,0-2.2,0.4-2.2,1.7c0,2.5,5.5,1.9,5.5,6.1c0,2.7-2.1,3.8-4.6,3.8
+                            c-0.9,0-1.8-0.3-2.6-0.5l0.2-1.7C0.9,45.6,2,46,3,46c1,0,2.5-0.6,2.5-2.1C5.5,41,0,41.8,0,37.8c0-2.3,1.8-3.5,4.1-3.5
+                            c0.8,0,1.8,0.2,2.7,0.5L6.5,36.4z"></path>
+                            <path class="st0"
+                                d="M15.7,39.5c-0.7-0.3-1.3-0.4-1.9-0.4c-1.9,0-3,1.7-3,3.5c0,1.7,0.9,3.5,3.1,3.5c0.6,0,1.3-0.2,1.8-0.5l0.1,1.5
+                            c-0.7,0.3-1.5,0.4-2.2,0.4c-2.8,0-4.7-2.2-4.7-4.9c0-2.9,1.9-4.9,4.7-4.9c0.7,0,1.6,0.2,2.1,0.4L15.7,39.5z">
+                            </path>
+                            <path class="st0" d="M17.8,33.5h1.7v5.8h0c0.6-1,1.7-1.6,3-1.6c2.4,0,3.5,1.5,3.5,4v5.6h-1.7v-4.9c0-2.2-0.5-3.3-2-3.4
+                            c-1.9,0-2.8,1.6-2.8,3.9v4.4h-1.7V33.5z"></path>
+                            <path class="st0"
+                                d="M32.9,37.7c2.8,0,4.7,2.1,4.7,4.9c0,2.7-1.9,4.9-4.7,4.9c-2.8,0-4.7-2.2-4.7-4.9C28.2,39.8,30.1,37.7,32.9,37.7
+                             M32.9,46.2c2,0,2.9-1.8,2.9-3.5c0-1.8-1.1-3.5-2.9-3.5c-1.8,0-2.9,1.7-2.9,3.5C30,44.3,30.9,46.2,32.9,46.2">
+                            </path>
+                            <path class="st0"
+                                d="M44.1,37.7c2.8,0,4.7,2.1,4.7,4.9c0,2.7-1.9,4.9-4.7,4.9c-2.8,0-4.7-2.2-4.7-4.9C39.3,39.8,41.2,37.7,44.1,37.7
+                             M44.1,46.2c2,0,2.9-1.8,2.9-3.5c0-1.8-1.1-3.5-2.9-3.5c-1.8,0-2.9,1.7-2.9,3.5C41.2,44.3,42.1,46.2,44.1,46.2">
+                            </path>
+                            <rect x="51.2" y="33.5" class="st0" width="1.7" height="13.8"></rect>
+                            <path class="st0"
+                                d="M65.2,37.7c2.8,0,4.7,2.1,4.7,4.9c0,2.7-1.9,4.9-4.7,4.9c-2.8,0-4.7-2.2-4.7-4.9C60.5,39.8,62.4,37.7,65.2,37.7
+                             M65.2,46.2c2,0,2.9-1.8,2.9-3.5c0-1.8-1.1-3.5-2.9-3.5c-1.8,0-2.9,1.7-2.9,3.5C62.3,44.3,63.2,46.2,65.2,46.2">
+                            </path>
+                            <path class="st0" d="M73.1,39.4h-2.2V38h2.2v-0.9c0-2.3,0.6-3.8,3.1-3.8c0.4,0,0.8,0.1,1.1,0.1l-0.1,1.4c-0.2-0.1-0.5-0.1-0.8-0.1
+                            c-1.5,0-1.7,1-1.7,2.2v1h2.5v1.4h-2.5v8h-1.7V39.4z"></path>
+                            <path class="st0" d="M84.2,34.5h3.4c2.6,0,4.5,0.9,4.5,3.2c0,1.8-1,2.6-2.6,3.1v0c1.7,0.1,3,1.3,3,3.1c0,2.8-2.3,3.4-4.8,3.4h-3.4
+                            L84.2,34.5L84.2,34.5z M86,40h1c1.8,0,3.3-0.2,3.3-2.1c0-1.5-1.3-1.9-2.4-1.9H86L86,40L86,40z M86,45.8h1.4c1.6,0,3.1-0.3,3.1-2.1
+                            c0-2-1.7-2.3-3.3-2.3H86L86,45.8L86,45.8z"></path>
+                            <path class="st0" d="M103.3,47.4h-1.7v-1.5h0c-0.5,1.1-1.8,1.7-3,1.7c-2.4,0-3.5-1.5-3.5-4V38h1.7v4.9c0,2.2,0.5,3.3,2,3.4
+                            c2,0,2.8-1.6,2.8-3.9V38h1.7L103.3,47.4L103.3,47.4z"></path>
+                            <path class="st0" d="M105.6,45.5c0.7,0.4,1.6,0.7,2.1,0.7c0.8,0,1.7-0.3,1.7-1.3c0-1.7-4-1.6-4-4.2c0-2,1.4-2.9,3.3-2.9
+                            c0.8,0,1.5,0.2,2.1,0.4l-0.1,1.5c-0.4-0.2-1.4-0.5-1.8-0.5c-0.9,0-1.6,0.4-1.6,1.1c0,1.9,4,1.4,4,4.4c0,2-1.6,2.9-3.2,2.9
+                            c-0.9,0-1.8-0.1-2.5-0.5L105.6,45.5z"></path>
+                            <path class="st0" d="M115.3,35.9h-1.9v-2h1.9V35.9z M113.5,38h1.7v9.4h-1.7V38z"></path>
+                            <path class="st0" d="M118.2,38h1.7v1.5h0c0.5-1.1,1.7-1.7,3-1.7c2.4,0,3.5,1.5,3.5,4v5.6h-1.7v-4.9c0-2.2-0.5-3.3-2-3.4
+                            c-1.9,0-2.8,1.6-2.8,3.9v4.3h-1.7V38z"></path>
+                            <path class="st0" d="M136.4,47c-0.7,0.2-1.4,0.6-2.9,0.6c-3.3,0-4.8-2-4.8-5.1c0-2.8,1.7-4.8,4.4-4.8c3.1,0,4.1,2.3,4.1,5.3h-6.6
+                            c0,1.9,1.4,3.1,3.1,3.1c1.1,0,2.4-0.6,2.9-0.9L136.4,47L136.4,47z M135.3,41.8c0-1.4-0.8-2.6-2.3-2.6c-1.7,0-2.4,1.4-2.5,2.6H135.3z
+                            "></path>
+                            <path class="st0" d="M138.8,45.5c0.7,0.4,1.6,0.7,2.1,0.7c0.8,0,1.8-0.3,1.8-1.3c0-1.7-4-1.6-4-4.2c0-2,1.4-2.9,3.3-2.9
+                            c0.8,0,1.5,0.2,2.1,0.4l-0.1,1.5c-0.4-0.2-1.4-0.5-1.8-0.5c-0.9,0-1.6,0.4-1.6,1.1c0,1.9,4,1.4,4,4.4c0,2-1.6,2.9-3.2,2.9
+                            c-0.9,0-1.8-0.1-2.6-0.5L138.8,45.5z"></path>
+                            <path class="st0" d="M146.1,45.5c0.7,0.4,1.6,0.7,2.1,0.7c0.8,0,1.7-0.3,1.7-1.3c0-1.7-4-1.6-4-4.2c0-2,1.4-2.9,3.3-2.9
+                            c0.8,0,1.5,0.2,2.1,0.4l-0.1,1.5c-0.4-0.2-1.4-0.5-1.8-0.5c-0.9,0-1.6,0.4-1.6,1.1c0,1.9,4,1.4,4,4.4c0,2-1.6,2.9-3.2,2.9
+                            c-0.9,0-1.8-0.1-2.6-0.5L146.1,45.5z"></path>
+                        </svg>
+                    </div>
+    
+                    <button class="btnStyle2">Menu</button>
+                </div>
+                <div class="headerNavBtns">
+                    <h3 class="otherHeader discover header">Programs & Courses</h3>
+                    <button class="btnStyle2">My Schulich</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- forms -->
+        <section id="forms" class="wrapper">
+
+            <div class="formHeader">
+                <h1>Schulich Program Eligibility</h1>
+            </div>
+            <div class="formContainer">
+                <main>
+
+
+                    <!-- Program Eligibility – 1 -->
+                    <form id="ProgramEligibility1">
+                        <h2>Prior to creating your login and starting your
+                            application, we need to determine your
+                            program eligibility</h2>
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="programIntrest">Primary program of interest? *</label>
+                            <!-- select -->
+                            <select id="programIntrest" required>
+                                <option selected value="select">select</option>
+                                <option value="Master of Marketing">Master of Marketing</option>
+                                <option value="Master of Management">Master of Management</option>
+                                <option value="Kellogg-Schulich Executive MBA">Kellogg-Schulich Executive MBA</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="programIntrest">Secondary program of interest? *<br>Note
+                                you can only have one active application.</label>
+                            <!-- select -->
+                            <select id="programIntrest" required>
+                                <option selected value="select">select</option>
+                                <option value="Master of Marketing">Master of Marketing</option>
+                                <option value="Master of Management">Master of Management</option>
+                                <option value="Kellogg-Schulich Executive MBA">Kellogg-Schulich Executive MBA</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="programIntrest">When do you plan to start your desired
+                                program? *</label>
+                            <!-- select -->
+                            <select id="programIntrest" required>
+                                <option selected value="select">select</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- radio -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle">Do you have advanced spoken proficiency in a
+                                language other than English? *</label>
+                        </div>
+                        <div class="radioField">
+                            <!-- yes -->
+                            <input type="radio" checked name="yorkStudent" id="yes">
+                            <label for="yes" class="text radioBTN">Yes</label>
+                            <!-- no -->
+                            <input type="radio" name="yorkStudent" id="no">
+                            <label for="no" class="text radioBTN">No</label>
+                        </div>
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="programIntrest">How many years of post-graduate
+                                full-time /
+                                internship work experience will you have by the
+                                time of your desired start date for your preferred
+                                program? *</label>
+                            <!-- select -->
+                            <select id="programIntrest" required>
+                                <option selected value="select">select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- email -->
+                        <label class="text fieldTitle" for="email2">Email *</label>
+                        <input id="email2" type="text" placeholder="JainDoe@email.ca">
+                        <!-- next -->
+                        <button id="nextBtn" class="btn btnStyle3">Next</button>
+                    </form>
+
+                    <!-- Program Eligibility – 2 -->
+                    <form id="ProgramEligibility2">
+                        <h2>Tell us about your academic history:</h2>
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="major">What was your undergraduate major,and when did
+                                you complete it? *</label>
+                            <!-- select -->
+                            <select id="major" required>
+                                <option selected value="select">Select Major</option>
+                                <option value="MMKG">MMKG</option>
+                                <option value="MMgt">MMgt</option>
+                                <option value="MREI">MREI</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="yrComplete">Year completed *</label>
+                            <!-- select -->
+                            <select id="yrComplete" required>
+                                <option selected value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="coursesTaken">Have you taken the following courses in
+                                your
+                                undergrad program? *</label>
+                            <!-- select -->
+                            <select id="coursesTaken" required>
+                                <option selected value="select">select</option>
+                                <option value="Master of Marketing">Master of Marketing</option>
+                                <option value="Master of Management">Master of Management</option>
+                                <option value="Kellogg-Schulich Executive MBA">Kellogg-Schulich Executive MBA</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- select -->
+                        <div class="fieldRow">
+                            <label class="text fieldTitle" for="gpa">What is your overall GPA for the last two years of
+                                your undergrad? If you cannot recall, please use the cumulative GPA for all years
+                                instead.</label>
+                            <!-- select -->
+                            <select id="gpa" required>
+                                <option selected value="select">select</option>
+                                <option value="2021">1.0</option>
+                                <option value="2022">2.0</option>
+                                <option value="2023">3.0</option>
+                                <option value="2023">4.0</option>
+                            </select>
+                            <!-- drop down icon -->
+                            <div class="arrowDown">
+                                <img src="assets/down.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="footerNav flex-row-spaceBetween">
+                            <button id="prevBtn" class="btn btnStyle1"><i class="fas fa-angle-left"></i>
+                                Previous</button>
+                            <button id="continueBtn" class="btn btnStyle2">Continue <i
+                                    class="fas fa-angle-right"></i></button>
+                        </div>
+                    </form>
+
+
+
+                </main>
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+    <!-- other content -->
+    <div class="otherContent">
+        <div class="resustContiner">
+            <h3 class="otherHeader discover">Want to learn more?</h3>
+            <div class="gallery">
+                <div class="boxIcon">
+                    <div class="icon">
+                        <img src="assets/icon1.png" alt="">
+                    </div>
+                    <p>View all program details</p>
+                </div>
+                <div class="boxIcon">
+                    <div class="icon">
+                        <img src="assets/icon2.png" alt="">
+                    </div>
+                    <p>Read the program brochure</p>
+                </div>
+                <div class="boxIcon">
+                    <div class="icon">
+                        <img src="assets/icon3.png" alt="">
+                    </div>
+                    <p>View all program details</p>
+                </div>
+                <div class="boxIcon">
+                    <div class="icon">
+                        <img src="assets/icon4.png" alt="">
+                    </div>
+                    <p>View all program details</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <script type='text/javascript'
+        src='https://schulich.yorku.ca/wp-content/themes/schulich/js/vendor/webfontloader.js?ver=1.0.0'
+        id='webfontloader-js'></script>
+    
+
+
+    <script>
+        const nextBtn = document.getElementById('nextBtn')
+        nextBtn.addEventListener('click', function () {
+            event.preventDefault()
+            const form1 = document.getElementById('ProgramEligibility1');
+            form1.style.display = "none"
+            const form2 = document.getElementById('ProgramEligibility2');
+            form2.style.display = "block"
+        });
+        const prevBtn = document.getElementById('prevBtn')
+        prevBtn.addEventListener('click', function () {
+            event.preventDefault()
+            const form1 = document.getElementById('ProgramEligibility1');
+            form1.style.display = "block"
+            const form2 = document.getElementById('ProgramEligibility2');
+            form2.style.display = "none"
+        });
+
+
+ 
+    </script>
+</body>
+
+</html>

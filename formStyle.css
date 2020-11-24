@@ -1,0 +1,238 @@
+:root{
+    --darkBlue: #1E5772;
+    --midBlue: #376986;
+    --lightBlue: #90ACC0;
+    --textColDark: #1A1A1A;
+    --textColLight: #ffffff;
+    --headerTextCol: #1E5772;
+    --borderCol: #E3E3E3;
+}
+
+/* input */
+input, select, textarea{
+    border: 1px solid var(--darkBlue);
+    border-radius: 3px;
+    padding:15px;
+    margin-bottom: 20px;
+    resize: none;
+
+}
+.radioField{
+    margin: 10px 0px 20px;
+}
+
+textarea{
+    width: 100%;
+    margin: 10px 0px 20px 0px
+}
+
+fieldset{
+    border: 0px;
+    padding: 0px;
+    max-width: 720px;
+}
+
+.fieldText{
+    color: var(--darkBlue);
+    margin: 0px;;
+}
+
+.textSpace{
+    margin-top: 15px;
+}
+
+fieldset .text a{
+    color: var(--darkBlue);
+    text-decoration: underline;
+    position: relative;
+}
+
+.conditional{
+    display: none;
+    margin-left: 20px;
+} 
+
+
+/* radio */
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--darkBlue);
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+input[type="radio" i]:checked{
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--darkBlue);
+    background-color: var(--darkBlue);
+    appearance: none;
+    border-radius: 100%;
+}
+
+.fieldTitle{
+    color: var(--darkBlue);
+}
+
+
+/* 2col */
+.col2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cbLabel{
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    color: var(--darkBlue);
+}
+.cbLabel:before{
+    border: 1px solid red;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid var(--darkBlue);
+    position: absolute;
+    left: 0px;
+}
+
+.cbLabel:after{
+    content: '';
+    width: 3px;
+    height: 8px;
+    border-top: none !important;
+    border: 3px solid var(--darkBlue);
+    border-left: none;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    transform: rotate(45deg);
+    display: none;
+}
+input[type="checkbox"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ .cbLabel:after{
+    display: block;
+}
+
+#GMATScore{
+   padding: 15px 50px;
+   margin: 0px;
+   position: relative;
+}
+
+#GMATScore + .arrowDown{
+    top: 8px;
+}
+
+.fieldRow{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.fieldRow:first-child{
+    margin-right: 20px;
+}
+
+input[type="text"], select, input[type="password"]{
+    margin-top: 10px;
+    width: 100%;
+}
+
+select{
+    appearance: none;
+    position: relative;
+}
+
+.arrowDown{
+    position: absolute;
+    bottom: 35px;
+    right:10px;
+    width: 15px;
+}
+
+#ProgramEligibility1{
+    display: block;
+}
+
+#ProgramEligibility2{
+    display: none;
+}
+
+
+#result1{
+    display: none;
+}
+
+#result2{
+    display: none;
+}
+body{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,.71);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    display: none;
+
+}
+
+.overlay .colLeft{
+    background:var(--midBlue);
+
+}
+
+.overlay form{
+    background: #ffffff;
+}
+
+.text span{
+    opacity: 0.75;
+}
+
+.applyBtn1{
+    float: right;
+}
+
+#result2.resustContiner, #positive, #formInPage{
+    padding: 150px 0px;
+    max-width: 800px;
+    text-align: center;
+}
+
+#positive{
+    display: none;
+}
+.applyForm{
+    flex-direction: column;
+    margin: 0 auto
+}
+.applyFormHeader{
+    max-width: 550px;
+    width: 100%;
+}
+.applyForm form{
+    background: #ffffff;
+}
+
+#formInPage{
+    display: none;
+}
